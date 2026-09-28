@@ -672,20 +672,14 @@ footer p {
     <!-- <img src="images/logo.png" alt="WARP Lab" class="hero-logo"> -->
     <div class="video-frame" id="video-facade" onclick="
       var f=document.createElement('iframe');
-      f.src='https://www.youtube.com/embed/2Oina9UGwZk?autoplay=1&mute=1&controls=0&rel=0&modestbranding=1&iv_load_policy=3&disablekb=1';
-      f.title='WARP Lab — Featured Research';
+      f.src='https://www.youtube.com/embed/videoseries?list=PLO7MBQ8MTYvE&autoplay=1&mute=1&rel=0&modestbranding=1';
+      f.title='WARP Lab — Research Playlist';
       f.allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
       f.allowFullscreen=true;
-      var overlay=document.createElement('div');
-      overlay.style.cssText='position:absolute;inset:0;z-index:1;';
       this.innerHTML='';
       this.appendChild(f);
-      this.appendChild(overlay);
       this.style.cursor='default';
     " style="cursor:pointer;background:#000;">
-      <img src="https://img.youtube.com/vi/2Oina9UGwZk/maxresdefault.jpg"
-           alt="WARP Lab — Featured Research"
-           style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0.85;">
       <div class="video-placeholder">
         <div class="play-icon" style="border-color:rgba(255,255,255,0.6);background:rgba(0,0,0,0.4);">
           <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="white"/></svg>
