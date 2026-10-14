@@ -662,6 +662,21 @@ main {
   }
 }
 
+@media (max-width: 540px) {
+  .nav-icons,
+  #theme-toggle {
+    display: none;
+  }
+
+  .nav-menu-btn .nav-menu-label {
+    display: none;
+  }
+
+  .nav-menu-btn {
+    padding: 7px 10px;
+  }
+}
+
 /* ── FOOTER ── */
 footer {
   border-top: 1px solid var(--border);
@@ -701,7 +716,7 @@ footer p {
 
   <div class="nav-menu" id="nav-menu">
     <button class="nav-menu-btn" onclick="this.closest('.nav-menu').toggleAttribute('open')" aria-haspopup="true">
-      Menu
+      <span class="nav-menu-label">Menu</span>
       <svg viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
     </button>
     <div class="nav-dropdown">
